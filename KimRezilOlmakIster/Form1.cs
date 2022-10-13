@@ -25,9 +25,12 @@ namespace KimRezilOlmakIster
 
         private void buttona_Click(object sender, EventArgs e)
         {
-            buttonB.Enabled = true;
-            buttonC.Enabled = true;
-            buttonD.Enabled = true;
+            buttonA.BackColor = Color.Green;
+            buttonC.Enabled = false;
+            buttonD.Enabled = false;
+            buttonB.Enabled = false;
+
+           
             Buttonnextquestion.Enabled = true;
             buttonA.Enabled = false;
             seçim = 0;
@@ -36,9 +39,13 @@ namespace KimRezilOlmakIster
 
         private void buttonb_Click(object sender, EventArgs e)
         {
-            buttonA.Enabled = true;
-            buttonC.Enabled = true;
-            buttonD.Enabled = true;
+            buttonB.BackColor = Color.Green;
+
+            buttonC.Enabled = false;
+            buttonD.Enabled = false;
+            buttonA.Enabled = false;
+
+           
             Buttonnextquestion.Enabled = true;
             buttonB.Enabled = false;
             seçim = 1;
@@ -47,9 +54,13 @@ namespace KimRezilOlmakIster
 
         private void buttonc_Click(object sender, EventArgs e)
         {
-            buttonB.Enabled = true;
-            buttonA.Enabled = true;
-            buttonD.Enabled = true;
+            buttonC.BackColor = Color.Green;
+
+            buttonA.Enabled = false;
+            buttonD.Enabled = false;
+            buttonB.Enabled = false;
+
+           
             Buttonnextquestion.Enabled = true;
             buttonC.Enabled = false;
             seçim = 2;
@@ -60,9 +71,13 @@ namespace KimRezilOlmakIster
 
         private void buttond_Click(object sender, EventArgs e)
         {
-            buttonB.Enabled = true;
-            buttonC.Enabled = true;
-            buttonA.Enabled = true;
+            buttonD.BackColor = Color.Green;
+
+            buttonC.Enabled = false;
+            buttonA.Enabled = false;
+            buttonB.Enabled = false;
+
+            
             Buttonnextquestion.Enabled = true;
             buttonD.Enabled = false;
             seçim = 3;
@@ -71,6 +86,11 @@ namespace KimRezilOlmakIster
 
         private void buttonClear_Click(object sender, EventArgs e)
         {
+            buttonA.BackColor = Color.Gainsboro;
+            buttonB.BackColor = Color.Gainsboro;
+            buttonC.BackColor = Color.Gainsboro;
+            buttonD.BackColor = Color.Gainsboro;
+
             ClearBoard();
         }
 
