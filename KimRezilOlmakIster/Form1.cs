@@ -18,6 +18,10 @@ namespace KimRezilOlmakIster
         {
             InitializeComponent();
         }
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            GetSoru1();
+        }
 
         private void buttona_Click(object sender, EventArgs e)
         {
@@ -114,6 +118,18 @@ namespace KimRezilOlmakIster
             }
         }
 
+        private void GetSoru1()
+        {
+
+            richTextBox1.Text = "75+5=?";
+            buttonA.Text = "80";
+            buttonB.Text = "5";
+            buttonC.Text = "80";
+            buttonD.Text = "0";
+            cevap = 0;
+
+            label1.Text = "1";
+        }
         private void GetSoru2()
         {
 
@@ -177,8 +193,6 @@ namespace KimRezilOlmakIster
             label3.Text = Convert.ToString(int.Parse(label3.Text) + 1);
             label13.Text = Convert.ToString(int.Parse(label13.Text) - 5);
         }
-
-
 
     }
 }

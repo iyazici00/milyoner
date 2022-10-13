@@ -215,7 +215,7 @@
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(310, 151);
             this.richTextBox1.TabIndex = 16;
-            this.richTextBox1.Text = "75+5 = ?";
+            this.richTextBox1.Text = "";
             // 
             // label11
             // 
@@ -287,6 +287,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
