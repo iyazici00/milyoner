@@ -102,6 +102,11 @@ namespace KimRezilOlmakIster
         internal int seçim;
         private void Buttonnextquestion_Click(object sender, EventArgs e)
         {
+            buttonA.BackColor = Color.Gainsboro;
+            buttonB.BackColor = Color.Gainsboro;
+            buttonC.BackColor = Color.Gainsboro;
+            buttonD.BackColor = Color.Gainsboro;
+
             ClearBoard();
             ClickCount++;
             if (cevap == seçim)
