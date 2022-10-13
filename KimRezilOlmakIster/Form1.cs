@@ -41,6 +41,7 @@ namespace KimRezilOlmakIster
         {
             buttonB.BackColor = Color.Green;
 
+
             buttonC.Enabled = false;
             buttonD.Enabled = false;
             buttonA.Enabled = false;
